@@ -1,0 +1,715 @@
+* {
+    margin: 0;
+    padding: 0;
+    background-size: cover;
+    background: fixed;
+}
+
+.hero {
+    width: 100%;
+    height: 100vh;
+    background: rgb(15, 1, 49);
+}
+
+.header {
+    width: 100%;
+    height: 70px;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    animation: fade 1s ease-in forwards;
+}
+
+.logo {
+    display: flex;
+    align-items: center;
+    animation: fade 1.5s ease-in forwards;
+}
+
+.logo h1 {
+    font-size: 30px;
+    color: white;
+}
+
+.header ul li {
+    display: inline-block;
+    margin: 20px;
+    animation: fade 2s ease-in forwards;
+}
+
+.header ul li a {
+    font-size: 20px;
+    text-decoration: none;
+    color: white;
+    transition: .4s;
+}
+
+.header ul li a:hover {
+    color: rgb(190, 186, 186);
+    transition: .4s;
+}
+
+.log {
+    width: 150px;
+    display: flex;
+    justify-content: space-between;
+    animation: fade 2.5s ease-in forwards;
+}
+
+.log .btn {
+    width: 65px;
+    height: 40px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    transition: .4s;
+}
+
+.log .btn:nth-child(2) {
+    background: rgb(13, 109, 187);
+}
+
+.log .btn:nth-child(2):hover {
+    margin-right: 10px;
+    transition: .4s;
+}
+
+.log .btn:nth-child(1):hover {
+    margin-left: 10px;
+    background: orange;
+    transition: .4s;
+}
+
+.log .btn a {
+    text-decoration: none;
+    color: white;
+    font-weight: bold;
+    padding: 5px;
+}
+
+.hero-content {
+    width: 100%;
+    height: 85vh;
+    display: flex;
+    align-items: center;
+    background-size: cover;
+}
+
+.content {
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.content-message {
+    height: 500px;
+    max-width: 600px;
+    margin-top: 100px;
+}
+
+.content-message h1 {
+    font-size: 70px;
+    color: white;
+    margin-bottom: 20px;
+    animation: fade 3s ease-in forwards;
+}
+
+.content-message p {
+    font-size: 18px;
+    color: rgb(207, 199, 199);
+    margin-bottom: 20px;
+    animation: fade 3.5s ease-in forwards;
+}
+
+.search {
+    position: relative;
+    width: 400px;
+    height: auto;
+    display: flex;
+    align-items: center;
+    cursor: pointer;
+    animation: fade 4s ease-in forwards;
+}
+
+.search input {
+    text-align: left;
+    position: relative;
+    width: 400px;
+    height: -100px;
+    border-radius: 10px;
+    outline: none;
+    font-size: 20px;
+    border: 1.5px solid rgb(33, 197, 247);
+}
+
+.search button {
+    position: relative;
+    width: 100px;
+    height: 38px;
+    border-radius: 10px;
+    right: 20%;
+    border: none;
+    background: rgb(33, 197, 247);
+    font-size: 16px;
+    font-weight: bold;
+    color: white;
+    box-shadow: 2px 2px 5px grey;
+}
+
+.search-bt:hover {
+    background-color: rgb(47, 0, 255);
+}
+
+.content-image {
+    height: 400px;
+    max-width: 500px;
+}
+
+.content-image img {
+    margin-left: -70px;
+    height: 100%;
+    animation: fade 4.3s ease-in-out forwards;
+    border-radius: 20px;
+}
+
+@keyframes fade {
+    0% {
+        transform: rotateX(0deg);
+    }
+    100% {
+        transform: rotateX(360deg);
+    }
+}
+
+
+/*CSS FOR HOLIDAYS*/
+
+.holidays {
+    background: rgb(15, 1, 49);
+    width: 100%;
+    height: auto;
+}
+
+.holidays h1 {
+    padding: 40px;
+    text-align: center;
+    font-weight: bold;
+    font-size: 60px;
+    color: aqua;
+}
+
+.text-box {
+    border: none;
+    font-size: 20px;
+    font-style: italic;
+    margin-top: -300px;
+    margin-left: 250px;
+    color: white;
+}
+
+.holiday-content {
+    width: 100%;
+    height: auto;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    background: rgb(15, 1, 49);
+    margin-left: 200px;
+    list-style: none;
+}
+
+.nobox {
+    height: 430px;
+    border: none;
+    margin: 10px;
+    transition: .5s;
+    background: rgb(15, 1, 49);
+    display: list-item;
+    text-decoration: none;
+    margin-left: -90px;
+}
+
+.heading {
+    position: relative;
+    right: 0%;
+    top: -100%;
+    margin-top: -150px;
+}
+
+.holiday-box {
+    width: 450px;
+    height: 430px;
+    border: 2px solid green;
+    margin: 5px;
+    transition: .5s;
+    background: rgb(15, 1, 49);
+    display: list-item;
+    text-decoration: none;
+    border-radius: 20px;
+}
+
+.holiday-box:nth-child(1):hover {
+    margin-left: 80px;
+    border: 2px solid aqua;
+    transition: .5s;
+}
+
+.holiday-box:nth-child(4):hover {
+    margin-left: 80px;
+    border: 2px solid aqua;
+    transition: .5s;
+}
+
+.holiday-box:nth-child(2):hover {
+    margin-bottom: 30px;
+    border: 2px solid aqua;
+    transition: .5s;
+}
+
+.holiday-box:nth-child(5):hover {
+    margin-bottom: 30px;
+    border: 2px solid aqua;
+    transition: .5s;
+}
+
+.holiday-box:nth-child(3):hover {
+    margin-top: 25px;
+    border: 2px solid aqua;
+    transition: .5s;
+}
+
+.holiday-box:nth-child(6):hover {
+    margin-top: 25px;
+    border: 2px solid aqua;
+    transition: .5s;
+}
+
+.holiday-box img {
+    width: 450px;
+    height: 350px;
+    border-radius: 20px;
+}
+
+.holiday-box a {
+    text-decoration: none;
+    color: red;
+    font-size: 20px;
+    font-weight: bold;
+    padding: 10px;
+}
+
+.holiday-box p {
+    font-size: 21px;
+    font-weight: bolder;
+    color: antiquewhite;
+    padding: 10px;
+}
+
+
+/*ABOUT CEO CSS*/
+
+.hero-about {
+    width: 100%;
+    height: 70vh;
+    background: url(/images/luxery.jpg) no-repeat;
+    background-size: 100%;
+    background-position: center;
+    border-bottom-left-radius: 50%;
+    border-bottom-right-radius: 50%;
+}
+
+.blur {
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, .7);
+}
+
+.hero-about-content {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.hero-about-content h1 {
+    font-size: 60px;
+    color: white;
+    margin-bottom: 10px;
+}
+
+.hero-about-content p {
+    font-size: 20px;
+    color: white;
+    margin-bottom: 20px;
+}
+
+.hero-about-content button {
+    width: 250px;
+    padding: 10px;
+    font-size: 18px;
+    font-weight: bold;
+    background: transparent;
+    border: 1.5px solid aqua;
+    color: aqua;
+    transition: .5s;
+    cursor: pointer;
+}
+
+.hero-about-content button:hover {
+    background-color: aqua;
+    color: indigo;
+    transition: .5s;
+}
+
+.hero-about-content input {
+    width: 500px;
+    height: 40px;
+    margin-bottom: 20px;
+    outline: none;
+    border: 2px solid aqua;
+    text-align: center;
+    font-size: 18px;
+    font-weight: bold;
+}
+
+.about {
+    width: 100%;
+    height: 80vh;
+    background: rgb(6, 0, 19);
+}
+
+.about-C {
+    position: relative;
+    max-width: 1000px;
+    height: -0px;
+    display: flex;
+    top: 50px;
+    left: 400px;
+}
+
+.ceo-img {
+    height: 600px;
+    width: 500px;
+}
+
+.ceo-img img {
+    width: 70%;
+    height: 60%;
+    border-radius: 100%;
+    margin-left: -300px;
+}
+
+.nobox img {
+    border-radius: 50px;
+}
+
+.ceo-history {
+    max-width: 600px;
+    margin-left: -180px;
+}
+
+.ceo-history h1 {
+    color: white;
+    padding: 10px;
+    font-size: 40px;
+    text-decoration: underline aqua;
+}
+
+.ceo-history p {
+    padding: 10px;
+    font-size: 16px;
+    font-weight: 400;
+    color: antiquewhite;
+    letter-spacing: 2px;
+}
+
+.ceo-history button {
+    margin: 10px;
+    width: 150px;
+    height: 40px;
+    font-size: 20px;
+    font-weight: bold;
+    color: indigo;
+    background: aqua;
+    border: none;
+    border-top-left-radius: 50%;
+    border-bottom-right-radius: 50%;
+    transition: .5s;
+    cursor: pointer;
+}
+
+.ceo-history button:hover {
+    border-radius: 10px;
+    transition: .5s;
+}
+
+
+/*CONTACT CSS*/
+
+.contact-us {
+    width: 100%;
+    height: 100vh;
+    background: url(/images/next.jpg) no-repeat;
+    background-size: 100%;
+    background-position: center;
+}
+
+.heed {
+    color: white;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+
+.heed h1 {
+    font-size: 45px;
+    color: aqua;
+}
+
+.blur1 {
+    width: 100%;
+    height: 100vh;
+    background: rgba(0, 0, 0, .8);
+}
+
+.contact {
+    position: relative;
+    left: 100px;
+    margin-top: 50px;
+    padding: 0px;
+    height: 550px;
+    max-width: 90%;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.icon {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 100px;
+}
+
+.icon .i {
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    background: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-right: 20px;
+}
+
+.icon-content h1 {
+    color: aqua;
+}
+
+.icon-content p {
+    color: white;
+}
+
+.text-us {
+    height: 400px;
+    width: 500px;
+    display: flex;
+    flex-direction: column;
+    background: rgb(248, 244, 244);
+    text-align: center;
+    margin-top: -100px;
+    border: 500px;
+    border-color: black;
+    border-radius: 50px;
+}
+
+.text-us h1 {
+    font-size: 40px;
+    color: rgb(12, 12, 12);
+    margin-bottom: 10px;
+}
+
+.text-us p {
+    color: rgb(12, 12, 12);
+    margin-bottom: 5px;
+}
+
+.text-us input {
+    width: 500px;
+    outline: none;
+    border-top: none;
+    border-left: none;
+    border-right: none;
+    border: 2px solid rgb(61, 60, 60);
+    height: 40px;
+    margin-bottom: 50px;
+    font-size: 18px;
+    text-align: center;
+}
+
+.text-us button {
+    margin: 10px;
+    margin-left: 30px;
+    height: 40px;
+    font-size: 20px;
+    font-weight: bold;
+    color: indigo;
+    background: aqua;
+    border: none;
+    border-top-left-radius: 50%;
+    border-bottom-right-radius: 50%;
+    transition: .5s;
+    cursor: pointer;
+    text-align: center;
+}
+
+.text-us button:hover {
+    border-radius: 400px;
+    transition: .5s;
+}
+
+
+/* CONTACT FORM */
+
+.finish {
+    background: rgba(44, 62, 80, 0.7);
+    padding: 40px;
+    width: 250px;
+    margin: 0 auto;
+    margin-left: 600px;
+    border-radius: 30px;
+    margin-top: -100px;
+}
+
+.move {
+    margin-top: 10px;
+}
+
+form {
+    text-align: center;
+    width: 240px;
+}
+
+input {
+    width: 200px;
+    text-align: center;
+    background: transparent;
+    border: none;
+    border-bottom: 2px solid white;
+    font-size: 16px;
+    font-weight: 200px;
+    padding: 10px 0;
+    transition: border 0.5s;
+    outline: none;
+    color: white;
+}
+
+a {
+    color: yellow;
+}
+
+a:hover {
+    color: cyan;
+}
+
+h2 {
+    color: yellow;
+    text-align: center;
+}
+
+.last {
+    background-color: rgb(10, 211, 218);
+    border-radius: 125px;
+    cursor: pointer;
+    width: 150px;
+    height: 50px;
+    font-size: 15px;
+    line-height: 25px;
+    padding: 10px;
+}
+
+button:hover {
+    background: rgb(219, 216, 4);
+    color: white;
+}
+
+.SignIn {
+    color: white;
+}
+
+ ::placeholder {
+    opacity: 0.6;
+    color: rgb(248, 248, 243);
+}
+
+
+/*footer cs*/
+
+.footer-section {
+    background-color: #24262b;
+    padding: 70px 0;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    margin-top: 2170px;
+    text-align: left;
+}
+
+.footer {
+    background-color: #24262b;
+    padding: 70px 0;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    margin-top: -100px;
+}
+
+.row {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.div-container {
+    max-width: 1170px;
+    margin: auto;
+}
+
+.foot-cool ul li:not(:last -child) {
+    margin-bottom: 10px;
+}
+
+.foote-cool ul li a {
+    text-decoration: none;
+}
+
+.footer-cool h4 {
+    font-size: 18px;
+    color: black;
+    margin-bottom: 30px;
+    text-transform: capitalize;
+    position: relative;
+    box-sizing: border-box;
+}
+
+.footer-cool h4::before {
+    content: '';
+    position: absolute;
+    left: 0;
+    bottom: -10px;
+    background-color: #e91e63;
+    height: 2px;
+}
+
+.footer-cool {
+    width: 25%;
+    padding: 0 15px;
+}
+
+.foot-div {
+    margin-left: 1000px;
+    margin-top: -150px;
+}
+
+.last-ul {
+    list-style: none;
+}
